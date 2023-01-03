@@ -28,7 +28,7 @@ const checkForEnterKey = (event) => {
       <>
       <h1>{pokemon.name}</h1>
       <img src={pokemon.img} />
-      <h3>Species: {pokemon.species}</h3>
+      <h3 id="species">Species: {pokemon.species}</h3>
       <h3>Type: {pokemon.type}</h3>
       <h4>HP: {pokemon.hp}</h4>
       <h4>ATTACK: {pokemon.attack}</h4>
@@ -36,6 +36,10 @@ const checkForEnterKey = (event) => {
       </>
       )}
       </div>
+      <footer>
+            <p>Created by <a title="Go to my portfolio page" href="https://www.renlumfao.com" target="_blank">Wajid Hussain</a></p>
+            <p>Version Number: <a href="http://bit.ly/3Cf9KPZ">V1.00</a></p>
+      </footer>
     </>
   );
 }

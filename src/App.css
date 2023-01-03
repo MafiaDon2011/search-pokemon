@@ -60,13 +60,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 55vh;
 }
 
 .displaySection img {
     width: 200px;
 }
 
+.displaySection #species {
+    margin-top: 0px;
+}
+
 .displaySection h1, h3, h4 {
     margin-top: 10px;
     text-transform: capitalize;
+}
+
+
+footer {
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    flex-direction: column;
 }
