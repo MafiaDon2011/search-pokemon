@@ -62,6 +62,11 @@
     align-items: center;
 }
 
-.displaySection h1 {
+.displaySection img {
+    width: 200px;
+}
+
+.displaySection h1, h3, h4 {
     margin-top: 10px;
+    text-transform: capitalize;
 }
