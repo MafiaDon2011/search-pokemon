@@ -21,7 +21,7 @@ const checkForEnterKey = (event) => {
       <div class="header">
         <div><img src="../assets/pokemon-icon.png"></img></div>
         <h1>Pokemon Pokidex</h1>
-        <input onKeyDown={checkForEnterKey} type="text" onChange={(event) => { setPokemonName(event.target.value) }} />
+        <input onKeyDown={checkForEnterKey} type="text" onChange={(event) => { setPokemonName(event.target.value.toLowerCase()) }} />
         <button onClick={searchPokemon}>Search Pokemon</button>
       </div>
       <div class="displaySection">{!pokemonChosen ? (<h1>Please Choose a Pokemon</h1>) : (
@@ -38,7 +38,7 @@ const checkForEnterKey = (event) => {
       </div>
       <footer>
             <p>Created by <a title="Go to my portfolio page" href="https://www.renlumfao.com" target="_blank">Wajid Hussain</a></p>
-            <p>Version Number: <a href="http://bit.ly/3Cf9KPZ">V1.00</a></p>
+            <p>Version Number: <a href="http://bit.ly/3Cf9KPZ">V1.0.1</a></p>
       </footer>
     </>
   );
